@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+    <head>
+        <div class="header">
+        {% include "model-header.html" %}
+        </div>
+    </head>
+    <body>
+        <div class="content">        
+        {% block content %} 
+        {% endblock %}
+        </div>
+    </body>
+    <footer>
+        <div class="footer">
+        {% include "model-footer.html" %}
+        </div>
+    </footer>
+    <style>
+        .header{
+            display: flex;
+            background-color: darkviolet;
+            justify-content: center;
+            height: 100px;
+            width: 100%;
+
+        }
+        .content{
+            display: inline-block;
+            background-color: deeppink;
+            height: 300px;
+            width: 100%;
+            
+
+
+        }
+        .footer{
+            display: flex;
+            background-color: lightseagreen;
+            
+            justify-content: center;
+            height: 100px;
+            width: 100%;
+        }
+        .html{
+            display: flex;
+            background-color: lightslategrey;
+            
+        }
+    </style>
+</html>

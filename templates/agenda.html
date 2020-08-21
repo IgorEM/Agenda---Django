@@ -1,0 +1,14 @@
+{% extends "model-page.html" %}
+        
+        {% block content %}
+        <h2>Agendamentos</h2>
+
+        <ul>
+        <!-- .all() retorna uma lista -->
+        {% for evento in eventos %}
+            <li> {{ evento.titulo }} - {{ evento.get_data_evento }} </li> 
+        <!-- eventos do dicionario da views -->
+        {% endfor %}
+        </ul>
+        {% endblock %}
+        
